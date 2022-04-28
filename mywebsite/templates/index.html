@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Heebo&family=Inter:wght@200;400;600;700;900&family=Oswald:wght@400;500&family=Overpass&family=Quicksand:wght@500&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Update 17 April 2022 | 16:13 wib</title>
+</head>
+
+<body class="bg-warna">
+
+    <!-- Start Heading -->
+
+    <div class="max-w-full h-20 sticky">
+        <div class="h-20 flex justify-between py-4 px-10 md:px-20 shadow-lg items-center">
+            <div class="text-3xl text-primary -mt-2 cursor-default font-quickysand">NgodingTerus</div>
+            <div class="space-y-1 cursor-pointer">
+                <span class="block w-8 h-[3px] bg-primary"></span>
+                <span class="block w-8 h-[3px] bg-primary"></span>
+                <span class="block w-8 h-[3px] bg-primary"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Heding -->
+
+    <!-- Start About -->
+
+    <div class="grid grid-cols-1 gap-10 content-start p-8 md:grid-cols-2 md:gap-16 md:py-12 md:px-20">
+
+        <div class="grid grid-cols-1 content-center">
+            <div class="text-3xl text-slate-800 my-4 font-extrabold font-quickysand">Apa itu NgodingTerus?</div>
+            <div class="my-4 font-quickysand">Ngoding Terus adalah sebuah platform yang dibuat oleh beberapa mahasiswa teknik informatika yang sedang gabut karena tidak ada kegiatan. Kita berupaya untuk mencurahkan isi pikiran kita dan berusaha untuk menjadi bermanfaat untuk masyarakat.</div>
+             <a class="my-4 bg-second py-3 px-8 w-8/12 lg:w-2/5 rounded-sm shadow-md font-quickysand text-white hover:bg-primary transition ease-in-out duration-700"  href = '{% url 'account:login' %}'>Login Sekarang</a>
+        </div>
+
+        <div class="">
+            <img src="/static/img/heading.png" alt="Heading" class="w-full">
+        </div>
+
+    </div>
+
+    <!-- End About -->
+
+    <!-- Start Main -->
+
+    <div class="max-w-full py-6 px-3 bg-second">
+
+        <h1 class="text-2xl font-quickysand text-center font-extrabold text-white">Our Team</h1>
+        <p class="font-sm font-quickysand text-center text-white mt-2 mb-5">Ini adalah contoh beberapa orang gabut. Kerjaannya cuma turu mangan turu mangan.</p>
+        <div class="grid grid-cols-1 gap-10 content-start p-5 md:p-5 md:px-16 md:grid-cols-3 md:gap-12">
+
+            <div class="bg-cover bg-center w-full h-64 grid grid-cols-1 content-end rounded-xl" style="background-image: url('/static/img/person/dani.png')">
+                <div class="bg-gradient-to-t from-second h-40 grid grid-cols-1 content-end">
+                    <div class="px-5 py-7">
+                        <p class="text-3xl font-bold font-quickysand text-white mb-1">Raffael Deni</p>
+                        <p class="text-sm font-medium font-quickysand text-white">UI/UX & Front-end Web Developer</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-cover bg-center w-full h-64 grid grid-cols-1 content-end rounded-xl" style="background-image: url('/static/img/person/kevin.jpg')">
+                <div class="bg-gradient-to-t from-second h-40 grid grid-cols-1 content-end">
+                    <div class="px-5 py-7">
+                        <p class="text-3xl font-bold font-quickysand text-white mb-1">Kevin Alfito</p>
+                        <p class="text-sm font-medium font-quickysand text-white">Back-end Web Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-cover bg-center w-full h-64 grid grid-cols-1 content-end rounded-xl" style="background-image: url('/static/img/person/reja.png')">
+                <div class="bg-gradient-to-t from-second h-40 grid grid-cols-1 content-end">
+                    <div class="px-5 py-7">
+                        <p class="text-3xl font-bold font-quickysand text-white mb-1">Muhammad Fahreza</p>
+                        <p class="text-sm font-medium font-quickysand text-white">Back-end Web Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-cover bg-center w-full h-64 grid grid-cols-1 content-end rounded-xl" style="background-image: url('/static/img/person/dani.png')">
+                <div class="bg-gradient-to-t from-second h-40 grid grid-cols-1 content-end">
+                    <div class="px-5 py-7">
+                        <p class="text-3xl font-bold font-quickysand text-white mb-1">No Name</p>
+                        <p class="text-sm font-medium font-quickysand text-white">Fullstack Web Developer</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-cover bg-center w-full h-64 grid grid-cols-1 content-end rounded-xl" style="background-image: url('/static/img/person/adit.jpg')">
+                <div class="bg-gradient-to-t from-second h-40 grid grid-cols-1 content-end">
+                    <div class="px-5 py-7">
+                        <p class="text-3xl font-bold font-quickysand text-white mb-1">Aditya Bayu</p>
+                        <p class="text-sm font-medium font-quickysand text-white">Fullstack Web Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-cover bg-center w-full h-64 grid grid-cols-1 content-end rounded-xl" style="background-image: url('/static/img/person/reja.png')">
+                <div class="bg-gradient-to-t from-second h-40 grid grid-cols-1 content-end">
+                    <div class="px-5 py-7">
+                        <p class="text-3xl font-bold font-quickysand text-white mb-1">No Name</p>
+                        <p class="text-sm font-medium font-quickysand text-white">Fullstack Web Developer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- End Main -->
+
+    <div class="pb-96"></div>
+
+</body>
+
+</html>

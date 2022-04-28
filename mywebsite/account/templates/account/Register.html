@@ -1,0 +1,77 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Register Form</title>
+</head> 
+<body>
+    
+    <div class="w-screen h-screen font-quickysand flex flex-col justify-center items-center lg:grid lg:grid-cols-2">
+        <img src="/static/img/kambing.png" class="relative hidden lg:inline-block w-96 hover:scale-150 transition-all duration-300 transform">
+        <form class="flex flex-col justify-center items-center" method='POST' action='{% url 'account:register' %}'>
+            {% csrf_token %}
+            <img src="/static/img/user.png" class="w-40" />
+           {% comment %} buatin alert nya {% endcomment %}
+            {% for field, error in form.errors.items %}
+        <div style='color:red; '>
+            {{ error|striptags }}
+        </div>
+        {% endfor %}
+
+            <h2 class="my-7 font-bold text-3xl text-gray-700 text-center"  >Register
+            </h2> 
+            <div class="relative group">
+                <i class="fa fa-user top-1 pb-1 absolute text-primarycolor group-focus:scale-125">
+                </i>
+                
+               
+        
+                <input type="text" name='username' placeholder='Username' class='pl-8 border-b-2 outline-none focus:border-primarycolor duration-500'>
+            </div>
+            <div class="relative mt-4 group">
+                <i class="fa fa-lock top-1 absolute text-primarycolor group-focus:scale-125">
+                </i>
+               
+                <input type="password" name='password1' placeholder='Password' class='pl-8 border-b-2 outline-none focus:border-primarycolor duration-500'>
+            </div>
+            <div class="relative mt-4 group">
+                <i class="fa fa-lock top-1 absolute text-primarycolor group-focus:scale-125">
+                </i>
+               
+                <input type="password" name='password2' placeholder='Password Confirmation' class='pl-8 border-b-2 outline-none focus:border-primarycolor duration-500'>
+            </div>
+            <button type='submit'
+            class="
+            py-3 
+            px-20 
+            mt-8
+            bg-primarycolor 
+            rounded-full 
+            text-white 
+            text-xl
+            duration-200
+            shadow-xl
+            hover:translate-y-1
+            hover:opacity-90
+            hover:ring-2
+            hover:ring-sky-400">REGISTER</button>
+        </form>
+    </div>. •  
+    <img 
+    src="/static/img/wave.svg" 
+    class="fixed hidden lg:block h-full w-full top-60" 
+    style="z-index: -1;"
+    >
+</body>
+
+</html>
